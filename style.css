@@ -44,34 +44,20 @@ nav ul li a:hover{
     transition:0.3s;
 }
 
-.hero{
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
 
-    background:
-    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-    url("../images/hero.png");
-
-    background-size:cover;
-    background-position:center;
-}
 
 .hero h1{
-    font-size:55px;
-    margin-bottom:20px;
+    font-size:72px;
+    color:#fff;
+    font-weight:800;
 }
 
 .hero p{
-    width:60%;
-    line-height:1.7;
-    margin-bottom:30px;
+    color:#fff;
+    font-size:22px;
+    max-width:750px;
+    margin:25px auto;
 }
-
 .btn{
     background:#00d9ff;
     color:black;
@@ -743,10 +729,7 @@ nav a:hover {
     text-align:center;
     color:#888;
 }
-.hero{
-    text-align: center;
-    padding: 80px 10%;
-}
+
 .hero-image{
     margin: 30px 0;
     text-align: center;
@@ -800,4 +783,118 @@ nav a:hover {
 
 .portfolio-card p{
     color:#ddd;
+}
+/* ===== HOME PAGE FIX ===== */
+
+
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#ddd;
+    width:100%;
+    max-width:600px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    max-width:450px;
+    width:100%;
+    border-radius:15px;
+}
+
+.service-container,
+.portfolio-container,
+.pricing-container,
+.testimonial-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.service-card,
+.portfolio-card,
+.price-card,
+.testimonial-card{
+    width:300px;
+    background:#1b1b1b;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.service-card:hover,
+.portfolio-card:hover,
+.price-card:hover,
+.testimonial-card:hover{
+    transform:translateY(-8px);
+}
+
+.portfolio-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:0 10%;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hero.png") center center/cover no-repeat;
+}
+
+.hero-image{
+    display:none;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:800;
+    color:#fff;
+}
+
+.hero p{
+    font-size:22px;
+    color:#eee;
+    max-width:800px;
+    margin:25px auto;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+}
+
+.btn{
+    padding:18px 45px;
+    border-radius:50px;
+    font-size:20px;
 }
