@@ -868,7 +868,7 @@ nav a:hover {
 
     background:
     linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("images/hero.png") center center/cover no-repeat;
+    url("hero.png") center center/cover no-repeat;
 }
 
 .hero-image{
