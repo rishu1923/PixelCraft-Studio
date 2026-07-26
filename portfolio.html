@@ -8,7 +8,6 @@
 </head>
 
 <body>
-<body>
 
 <nav>
     <li><a href="login.html">Login</a></li>
@@ -27,44 +26,56 @@
 <section class="page-section">
 
     <h1>Our Portfolio</h1>
-    <p>Explore some of our latest creative design projects.</p>
+    <p>Explore our creative graphic design projects created using Adobe Photoshop and Canva.</p>
 
     <div class="portfolio-container">
 
         <div class="portfolio-card">
-            <img src="logo-design.png" alt="Logo Design">
+            <img src="logo-design.png" alt="Logo Design" onclick="openImage(this.src)">
             <h3>Logo Design</h3>
             <p>Unique and professional logo designs for businesses.</p>
         </div>
 
         <div class="portfolio-card">
-            <img src="branding.png" alt="Branding">
-            <h3>Brand Identity</h3>
-            <p>Complete branding packages for modern companies.</p>
-        </div>
-
-        <div class="portfolio-card">
-            <img src="poster.png" alt="Poster Design">
+            <img src="poster.png" alt="Poster Design" onclick="openImage(this.src)">
             <h3>Poster Design</h3>
-            <p>Creative posters for marketing and events.</p>
+            <p>Creative posters for marketing, promotions and events.</p>
         </div>
 
         <div class="portfolio-card">
-            <img src="social-media.png" alt="Social Media Design">
-            <h3>Social Media</h3>
-            <p>Instagram, Facebook and other social media creatives.</p>
+            <img src="banner.png" alt="Banner Design" onclick="openImage(this.src)">
+            <h3>Banner Design</h3>
+            <p>Professional banners for websites, businesses and advertisements.</p>
         </div>
 
         <div class="portfolio-card">
-            <img src="thumbnail.png" alt="Thumbnail Design">
+            <img src="social-media.png" alt="Social Media Design" onclick="openImage(this.src)">
+            <h3>Social Media Design</h3>
+            <p>Creative social media posts designed for maximum engagement.</p>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="thumbnail.png" alt="Thumbnail Design" onclick="openImage(this.src)">
             <h3>YouTube Thumbnail</h3>
-            <p>Eye-catching thumbnails that increase clicks.</p>
+            <p>Eye-catching thumbnails that attract more viewers.</p>
         </div>
 
         <div class="portfolio-card">
-            <img src="uiux.png" alt="UI/UX Design">
-            <h3>UI/UX Design</h3>
-            <p>Modern website and mobile app interface designs.</p>
+            <img src="business-card.png" alt="Business Card" onclick="openImage(this.src)">
+            <h3>Business Card</h3>
+            <p>Modern business card designs for professional branding.</p>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="flyer.png" alt="Flyer Design" onclick="openImage(this.src)">
+            <h3>Flyer Design</h3>
+            <p>Professional flyers for promotions, events and business marketing.</p>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="photo-editing.png" alt="Photo Editing" onclick="openImage(this.src)">
+            <h3>Photo Editing</h3>
+            <p>Professional photo editing, retouching and image enhancement using Adobe Photoshop.</p>
         </div>
 
     </div>
@@ -76,10 +87,9 @@
 
         <div class="footer-box">
             <h2>PixelCraft Studio</h2>
-            <p>
-                We create creative graphic designs, branding solutions,
-                UI/UX designs and modern websites for businesses.
-            </p>
+          <p>
+             We create professional graphic designs using Adobe Photoshop and Canva, including logos, posters, banners, social media creatives, thumbnails, and photo editing projects.
+         </p>
         </div>
 
         <div class="footer-box">
@@ -97,9 +107,9 @@
 
             <p>Logo Design</p>
             <p>Graphic Design</p>
-            <p>UI/UX Design</p>
+            <p>Poster Design</p>
+            <p>Photo Editing</p>
             <p>Social Media Design</p>
-            <p>Website Design</p>
         </div>
 
         <div class="footer-box">
@@ -120,5 +130,19 @@
     </p>
 
 </footer>
+<div id="lightbox" class="lightbox" onclick="closeImage()">
+    <img id="lightbox-img">
+</div>
+
+<script>
+function openImage(src){
+    document.getElementById("lightbox").style.display="flex";
+    document.getElementById("lightbox-img").src=src;
+}
+
+function closeImage(){
+    document.getElementById("lightbox").style.display="none";
+}
+</script>
 </body>
 </html>
